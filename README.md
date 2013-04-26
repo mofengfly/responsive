@@ -4,7 +4,7 @@
 * [mediaquery ie8-兼容实现（mediaquerypolyfill）](/1.0/doc/mediaquerypolyfill.md)
 * [响应式图片兼容实现（picturepolyfill）](/1.0/doc/picturepolyfill.md)
 
-#布局
+##布局
 ###Reflowing Layouts
 - [Mostly Fluid](http://s.codepen.io/bradfrost/fullpage/Iardn "Mostly Fluid")
 - [Column Drop](http://codepen.io/bradfrost/full/zhCwd "Column Drop")
@@ -12,7 +12,7 @@
 - [Tiny Tweaks](http://codepen.io/bradfrost/full/brjFH "Tiny Tweaks")
 - [Main column with sidebar](http://codepen.io/bradfrost/full/gtkHy, "Main column with sidebar")
 - [3 column](http://codepen.io/bradfrost/full/vspLD "3 column")
-- [3 column v2](http://codepen.io/bradfrost/full/joIac  "3 column v2")
+- [3 column v2](http://codepen.io/bradfrost/full/joIac "3 column v2")
 ###Equal Width
 - [2 equal-width columns](http://codepen.io/bradfrost/full/tnhGv "")
 - [3 equal-width columns](http://codepen.io/bradfrost/full/orKvD "")
