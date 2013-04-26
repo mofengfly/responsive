@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <!--
+Copyright (c) 2013 by Brad Frost (http://codepen.io/bradfrost/pen/Egaql)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
+
+  <title>Top Links Navigation - CodePen</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel='stylesheet' href='http://bradfrost.github.com/this-is-responsive/styles.css'>
+
+  <style>
+     .navigation li {
+          display: inline-block;
+          _display: inline;
+         _zoom: 1;
+		 margin: 0 0.5em;
+     }
+    .navigation li a {
+        display: block;
+        padding: 1em 0.5em;
+    }
+  </style>
+
+  <script style="display: none !important;">
+    // Kill alerts, confirmations and prompts
+    function cleanJS(js) {
+      js = js.replace(/\.location(\s+)?=/mi, "");
+      js = js.replace(/top.location.+=('|")/mi, "");
+      js = js.replace(/location\.replace/mi, "");
+      js = js.replace(/\.submit\(\)/mi, "");
+      js = js.replace(/fromCharCode/mi, "");
+      js = js.replace(/window(\s+)?\[(\s+)?("|')l/mi, "");
+      js = js.replace(/self(\s+)?\[(\s+)?("|')loc/mi, "");
+      return js;
+    }
+    _ogEval        = window.eval;
+    window.eval    = function(text) {_ogEval(cleanJS(text));};
+    window.confirm = function(){};
+    window.prompt  = function(){};
+    window.open    = function(){};
+    window.print   = function(){};
+    // Support hover state for mobile.
+    window.ontouchstart = function(){};
+  </script>
+
+</head>
+
+<body>
+
+  <!--Pattern HTML-->
+  <div id="pattern" class="pattern">
+  	<!--Begin Pattern HTML-->
+		<ul class="navigation" role="navigation">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Products</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</div>
+	<!--End Pattern HTML-->
+
+	<div class="container">	
+		<section class="pattern-description">
+			<h1>顶部链接</h1>
+      <p>From <a href="http://bradfrostweb.com/blog/web/responsive-nav-patterns/">Responsive Navigation Patterns</a>:</p>
+			<p>  最容易实现的导航响应式是简单的把他放在顶部。由于它实现非常简单，我们可以在许多网站上看到。</p>
+			<h3>优点</h3>
+			<ul>
+			<li><strong>易于实现</strong>- you can implement your large-screen site almost as-is.</li>
+			<li><strong>不依赖js</strong> &mdash; ensuring maximum compatibility</li>
+			<li><strong>No back-breaking CSS maneuvers required</strong></li>
+			<li><strong>No tripping over your source order</strong> &mdash; no need to jump through hoops to shift nav lists around in the source. It flows au naturel.</li>
+			</ul>
+			<h3>缺点</h3>
+			<ul>
+			<li>
+                <strong>高度问题</strong>-
+                <a href="http://andmag.se/2012/01/height-matters/">Height matters in mobile</a>.
+                As <a href="http://www.abookapart.com/products/mobile-first">Luke's book</a> explains, content-first, nav-second is preferred for mobile web experiences. You want to get the users to the meat-and-potatoes content as quickly as possible. That means getting the navigation out of user's way so they can focus on the core information on the page. It can also be confusing when all the core content is cut off</li>
+			<li><strong>伸缩性差</strong> &mdash; What happens when you want to add a new section to your site? Where the nav fits neatly on one line now, what happens when your client says you need to add "products and services" to the nav? Or when you need to translate the menu to German?</li>
+			<li><strong>Fat Fingers</strong> &mdash; Cramming links too closely together can easily result in unwanted proximity clicks</li>
+			<li><strong>跨设备问题</strong> &mdash; While text might look great on an iPhone, devices have different ways of rendering fonts. Sites can look great on an iPhone but break when viewed on other platforms:</li>
+			</ul>
+		</section>
+		<footer role="contentinfo">   
+			<div>
+				<nav id="menu">
+					<a href="http://bradfrost.github.com/this-is-responsive/patterns.html">&larr;More Responsive Patterns</a>
+				</nav>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>
